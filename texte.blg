@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: texte.aux
+The style file: alpha.bst
+Database file #1: ref.bib
+Warning--empty journal in benoistIntroductionRandomWalks2012
+Warning--empty year in benoistIntroductionRandomWalks2012
+Warning--empty journal in ghysDynamiqueFlotsUnipotentsa
+Warning--empty year in ghysDynamiqueFlotsUnipotentsa
+You've used 2 entries,
+            2543 wiz_defined-function locations,
+            569 strings with 4729 characters,
+and the built_in function-call counts, 768 in all, are:
+= -- 73
+> -- 27
+< -- 2
++ -- 8
+- -- 8
+* -- 55
+:= -- 127
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 11
+chr.to.int$ -- 2
+cite$ -- 6
+duplicate$ -- 34
+empty$ -- 56
+format.name$ -- 11
+if$ -- 153
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 2
+newline$ -- 13
+num.names$ -- 6
+pop$ -- 21
+preamble$ -- 1
+purify$ -- 13
+quote$ -- 0
+skip$ -- 24
+stack$ -- 0
+substring$ -- 43
+swap$ -- 5
+text.length$ -- 2
+text.prefix$ -- 1
+top$ -- 0
+type$ -- 16
+warning$ -- 4
+while$ -- 8
+width$ -- 3
+write$ -- 24
+(There were 4 warnings)

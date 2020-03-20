@@ -1,0 +1,131 @@
+%st&pdflatex
+% \documentclass[12pt, a4paper,oneside]{article} %article pour voir la todolist
+\documentclass[12pt, a4paper,oneside]{amsart} %amsart pour faire joli
+% \usepackage[T1]{fontenc} % disbaled for the compilation problem
+% \usepackage[utf8]{inputenc}
+% \usepackage[frenchb]{babel}
+\usepackage{amssymb, amsfonts, mathrsfs}
+%\usepackage{a4wide, enumerate,} %test
+% \usepackage{url} 	%test pour le probleme de compilation
+% \usepackage{textcomp}
+\usepackage[bookmarks]{hyperref}
+% \usepackage{showkeys} % for work version
+% \usepackage[textwidth=1.5in,backgroundcolor=orange,linecolor=black]{todonotes}
+%\usepackage[margin=2in]{geometry}
+%\usepackage{a4wide}
+
+\usepackage{lmodern}
+
+%\usepackage{fullpage}
+%\linespread{1.2}
+\hfuzz=15pt
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+%\usepackage{amssymb}
+%\usepackage{mathrsfs}
+\usepackage{mathtools}  
+\mathtoolsset{showonlyrefs}  
+
+%drawing
+\usepackage{tkz-euclide}
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+\usepackage{thmtools, thm-restate}
+% theoreme
+%\newtheorem{lemme}{Lemme}
+\newtheorem{theorem}{Théorème}
+\newtheorem{definition}{Définition}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{lemma}[theorem]{Lemme}
+\newtheorem{propo}{Proposition}[section]
+\theoremstyle{definition}
+\newtheorem{Def}{Définition}[section]
+\theoremstyle{remark}
+\newtheorem{Rq}{Remarque}
+\theoremstyle{remark}
+\newtheorem{exam}[propo]{Exemple}
+\newtheorem{rmk}[propo]{Remarque}
+
+% theorem volé à Deroin-Tholozant
+
+%\newtheorem{coro}[theorem]{Corollary}
+%\newtheorem{defprop}[propo]{Definition-Proposition}
+%\newtheorem{question}{Question}
+%\newtheorem*{conj}{Conjecture}
+%\theoremstyle{theorem}
+%\newtheorem*{CiteThm}{Theorem}
+
+% macro
+\renewcommand\P{\mathbb{P}}
+\newcommand\C{\mathbb{C}}
+\newcommand\R{\mathbb{R}}
+\newcommand\N{\mathbb{N}}
+\newcommand\D{\mathbb{D}}
+\newcommand\Z{\mathbb{Z}}
+\newcommand\HH{\mathbb{H}}
+\newcommand\Sp{\mathbb{S}}
+\newcommand\E{\mathbb{E}}
+\newcommand\T{\mathbb{T}}
+\newcommand\TT{\mathcal{T}}
+\newcommand\LL{\mathcal{L}}
+\newcommand\BB{\mathcal{B}}
+\newcommand\FF{\mathcal{F}}
+\newcommand\PP{\mathcal{P}}
+\newcommand\MM{\mathscr{M}}
+
+\newcommand\CC{\mathcal{C}}
+\newcommand\Co{\mathscr{C}}
+
+
+\newcommand\OP{\mathbf{OP}}
+\newcommand\BigO{\mathcal{O}}
+
+
+\newcommand\Sup[1]{\underset{#1}{\sup}}
+\newcommand\ti[1]{\widetilde{#1}}
+\newcommand\tq{\; | \;}
+\newcommand\Div{ {\rm div}}
+%\newcommand\norme[1]{\Vert #1 \Vert_{\infty}} 
+\newcommand\supp{\mathrm{supp}}
+\newcommand\grad{\mathrm{grad}}
+\newcommand\sh{\mathrm{sh}}
+\newcommand\ch{\mathrm{ch}}
+\newcommand\tr{\mathrm{tr}}
+\newcommand\Vol{\mathrm{Vol}}
+
+
+\newcommand\Isom{\mathrm{Isom}}
+\newcommand\Conv{\mathrm{Conv}}
+\newcommand\Min{\mathrm{Min}}
+\newcommand{\cat}[1]{\mathrm{CAT}\left( #1 \right)}
+\newcommand{\Eq}[1]{\mathrm{Eq}\left( #1 \right)}
+\newcommand{\ps}[1]{\left< #1 \right>}
+\newcommand{\lie}[1]{\mathfrak{#1}}
+
+
+
+% valeur absolue
+\usepackage{mathtools}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}
+
+
+\title{Dynamique Homogène}
+\author{La Team Caipi}
+
+\begin{document}
+
+\maketitle
+
+% \listoftodos
+
+\tableofcontents
+
+Survey de Ghys sur Ratner:
+\cite{ghysDynamiqueFlotsUnipotentsa}.
+La Takagi lecture de Benoist-Quint:
+\cite{benoistIntroductionRandomWalks2012}.
+\bibliographystyle{alpha}
+\bibliography{ref}
+\end{document}
