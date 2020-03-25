@@ -1,1 +1,5 @@
-\contentsline {section}{\tocsection {}{}{References}}{1}{section*.2}% 
+\contentsline {section}{\tocsection {}{1}{Pistes bibliographiques}}{1}{section.1}% 
+\contentsline {section}{\tocsection {}{2}{Introduction \IeC {\`a} la dynamique homog\IeC {\`e}ne}}{1}{section.2}% 
+\contentsline {subsection}{\tocsubsection {}{2.1}{Translation sur le tore}}{1}{subsection.2.1}% 
+\contentsline {section}{\tocsection {}{3}{Benoist-Quint sur le tore}}{2}{section.3}% 
+\contentsline {section}{\tocsection {}{}{References}}{3}{section*.2}% 

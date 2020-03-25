@@ -122,10 +122,215 @@
 
 \tableofcontents
 
-Survey de Ghys sur Ratner:
+\section{Pistes bibliographiques}
+\label{sec:bibli}
+
+Bourbaki de Ghys sur Ratner:
 \cite{ghysDynamiqueFlotsUnipotentsa}.
 La Takagi lecture de Benoist-Quint:
 \cite{benoistIntroductionRandomWalks2012}.
+Bourbaki de Ledrappier sur BQ:
+\cite{ledrappierMesuresStationairesEspaces}.
+
+\section{Introduction à la dynamique homogène}
+\label{sec:intro}
+
+\subsection{Translation sur le tore}
+\label{sub:transl_tore}
+
+On note $ \T^{d} $ le tore de dimension $ d $.
+On fixe $ v \in \R^{d} $ et considère $ T $
+la translation $ x \mapsto x + v $.
+On a la dichotomie:
+\begin{lemma}
+	La translation est (topologiquement) minimal
+	si et seulement si
+	la famille
+	$ (1, v_{1}, \dots, v_{d}) $
+	est algébriquement libre sur $ \mathcal{Q} $.
+\end{lemma}
+\begin{proof}
+	Soit on connait la classification
+	des sous-groupes fermés du tore,
+	soit on regarde en Fourier.
+\end{proof}
+
+On se place dans le cas minimal
+(on dit que $ v $ est générique).
+La dynamique de $ T $ est très particulière:
+\begin{itemize}
+	\item c'est la translation sur un groupe
+		(compact, abélien).
+	\item c'est une isométrie (drift = dérive = 0).
+\end{itemize}
+
+La translation $ T $ préserve (par définition)
+la mesure de Haar $ \lambda $ sur le tore.
+\begin{lemma}
+	La mesure de Haar $ \lambda $
+	est ergodique pour $ T $.
+\end{lemma}
+\begin{proof}
+	On décompose une fonction $ L^{1} $ 
+	invariante en Fourier
+	et on voit que les coefficients
+	non constant doivent être nuls.
+\end{proof}
+
+La translation est en fait uniquement
+ergodique. On peut le voir de plusieurs manières:
+
+De manière générale, sur un groupe
+abélien compact, si une translation est ergodique
+pour la mesure de Haar alors elle est uniquement ergodique
+(voir \cite{katokIntroductionModernTheory1995} prop. 4.2.3).
+
+Sinon méthode par "dérive nulle":
+soit $ \mu $ une autre mesure ergodique.
+Soit $ f $  une fonction continue
+Soit $ x $ générique pour $ \lambda $
+et $ y $ générique pour $ \mu $,
+c'est à dire que
+\begin{align}
+	\frac{1}{n}
+	\sum_{k=0}^{n-1}
+	f(T^{k} x)
+	&\to
+	\int
+	f
+	d \lambda
+	\\
+	\frac{1}{n}
+	\sum_{k=0}^{n-1}
+	f(T^{k} y)
+	&\to
+	\int
+	f
+	d \mu.
+\end{align}
+Comme l'orbite de $ x $
+est dense, on peut supposer
+que $ x $ est aussi proche de $ y $
+que l'on veut.
+Plus précisemment, soit $ \varepsilon > 0 $
+et $ \delta > 0 $ un module de continuité de
+$ f $ pour $ \varepsilon $.
+On suppose que $ d(x,y) < \delta $.
+
+Comme $ d(T^{k}x, T^{k} y) = d(x,y) $
+on a
+$ 
+f(T^{k}x)
+=f(T^{k} y)
++ O( \varepsilon)
+$ 
+pour tout $ k $.
+Donc:
+\begin{align}
+	\frac{1}{n}
+	\sum_{k=0}^{n-1}
+	f(T^{k} x)
+	&=
+	\frac{1}{n}
+	\sum_{k=0}^{n-1}
+	f(T^{k} y)
+	+
+	O(\varepsilon)
+	\\
+	& \implies
+	\\
+	\int
+	f
+	d \lambda
+	&=
+	\int
+	f
+	d \mu
+	+
+	O(\varepsilon)
+	.
+\end{align}
+Comme c'est vrai pour tout $ \varepsilon $,
+on a l'égalité.
+
+\section{Benoist-Quint sur le tore}
+\label{sec:BQ_tore}
+
+On considère le groupe
+$ SL_{d} (\Z) $
+agissant sur le tore
+$ \T^{d} $.
+Fixons une mesure de probabilité
+$ \mu $ sur $ SL_{d} (\Z) $
+telle que:
+\begin{itemize}
+	\item le support de $ \mu $ est finie
+	\item le (semi)groupe
+		$ \Gamma $
+		engendré par
+		le support de $ \mu $
+		agit
+		sur $ \R^{d} $
+		de manière proximal
+		et
+		fortement irréductible.
+\end{itemize}
+On s'intéresse à la marche aléatoire
+engendrée par $ \mu $ et son action
+sur $ \T^{d} $.
+On veut comprendre le théorème
+de Benoist-Quint \cite{benoistMesuresStationnairesFermes2011}
+suivant:
+\begin{theorem}
+	Toute mesure de probabilité
+	$ \mu $-stationaire sur le tore
+	est une combinaison
+	de la mesure de Haar sur le tore
+	et d'atomes.
+\end{theorem}
+
+Plan grossier de la preuve:
+\begin{itemize}
+	\item On introduit l'espace des tirages $ (B,\beta) $
+		et on décompose la mesure stationnaire
+		$ \nu = \int \nu_{b} \beta(db) $.
+		C'est un résultat classique de Furstenberg.
+	\item Il existe une application $ b \mapsto V_{b} $
+		qui à chaque tirage associe une droite
+		de $ \R^{d} $
+		telle que pour toute valeure d'adhérence (projective)
+		$ \pi $ 
+		de $ b_{1} \cdots b_{n} $
+		on ait $ Im(\pi) = V_{b} $
+		(c'est la direction de contraction de $ b_{1} \cdots b_{n} $).
+		C'est aussi Furstenberg, cela résulte du point précédent
+		appliqué à une mesure stationnaire sur l'espace projectif
+		et la proximalité.
+	\item Lemme clé: la proba $ \nu_{b} $ est $ V_{b} $-invariante
+		(c'est à dire par le flot dans la direction $ V_{b} $ ?)
+		Donc c'est Haar sur un sous-tore. 
+	\item Lemme intermédiaire: un $ SL_{n} $-espace dénombrable
+		alors toute proba $ \mu $-stationaire et ergodique
+		est $ \Gamma $-invariante et de support fini.
+	\item Soit $ \Phi $ l'application de $ B $
+		vers $ ST $ l'ensemble des sous-tores de $ \T^{d} $
+		qui à $ b $ associe
+		la composante connexe du stabilisateur
+		de $ \nu_{b} $.
+		L'ensemble $ ST $ est dénombrable
+		et est munie de la mesure stationaire
+		$  m = \Phi_{*} \beta $.
+		Par le lemme intermédiaire,
+		le support de $ m $ est fini
+		et $ \Gamma $-invariant.
+	\item Si un certain sous-tore de cette ensemble
+		fini n'est pas le tore en entier,
+		alors on peut contredire la forte irréductibilité.
+	\item Finalement, presque sûrement $ \nu_{b} $ est Haar
+		sur le tore. On en déduit que $ \nu $ est Haar
+		sur le tore, par $ \nu = \mathcal{E}(\nu_{b}) $.
+\end{itemize}
+
 \bibliographystyle{alpha}
 \bibliography{ref}
 \end{document}

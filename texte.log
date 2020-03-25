@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.27)  20 MAR 2020 19:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.27)  25 MAR 2020 18:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -726,29 +726,38 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 \tf@toc=\write5
 \openout5 = `texte.toc'.
 
- (./texte.bbl) [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 131.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 131.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 141.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 141.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 141.
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input line 146.
+ [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 285.
+ [2] (./texte.bbl) [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 336.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 336.
  (./texte.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 131.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 131.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 336.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 336.
 Package rerunfilecheck Info: File `texte.out' has not changed.
-(rerunfilecheck)             Checksum: 4CE983AEC613CB83A090103ED131A03B;46.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 131.
+(rerunfilecheck)             Checksum: 1E4A96971A5D39CEE6D56A779007E700;327.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 336.
  ) 
 Here is how much of TeX's memory you used:
- 21425 strings out of 492616
- 413150 string characters out of 6129480
- 502389 words of memory out of 5000000
- 24699 multiletter control sequences out of 15000+600000
- 28277 words of font info for 38 fonts, out of 8000000 for 9000
+ 21488 strings out of 492616
+ 414033 string characters out of 6129480
+ 507789 words of memory out of 5000000
+ 24738 multiletter control sequences out of 15000+600000
+ 46295 words of font info for 57 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 69i,5n,69p,458b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb>
-Output written on texte.pdf (1 page, 114323 bytes).
+ 69i,8n,69p,458b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on texte.pdf (3 pages, 229621 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 137 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
+ 21 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

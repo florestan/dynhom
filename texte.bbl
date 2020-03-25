@@ -1,13 +1,28 @@
-\begin{thebibliography}{Ghy}
+\begin{thebibliography}{BQb}
 
-\bibitem[BQ]{benoistIntroductionRandomWalks2012}
+\bibitem[BQa]{benoistIntroductionRandomWalks2012}
 Yves Benoist and Jean-François Quint.
 \newblock Introduction to random walks on homogeneous spaces.
 \newblock 7(2):135--166.
+
+\bibitem[BQb]{benoistMesuresStationnairesFermes2011}
+Yves Benoist and Jean-François Quint.
+\newblock Mesures stationnaires et fermés invariants des espaces homogènes.
+\newblock 174(2):1111--1162.
 
 \bibitem[Ghy]{ghysDynamiqueFlotsUnipotentsa}
 Étienne Ghys.
 \newblock Dynamique des flots unipotents sur les espaces homogènes.
 \newblock page~45.
+
+\bibitem[KH]{katokIntroductionModernTheory1995}
+Anatole Katok and Boris Hasselblatt.
+\newblock {\em Introduction to the {{Modern Theory}} of {{Dynamical Systems}}}.
+\newblock {Cambridge University Press}.
+\newblock Library Catalog: www.cambridge.org.
+
+\bibitem[Led]{ledrappierMesuresStationairesEspaces}
+François Ledrappier.
+\newblock Mesures stationaires sur les espaces homogènes.
 
 \end{thebibliography}
