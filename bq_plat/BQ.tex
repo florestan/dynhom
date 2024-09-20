@@ -1,0 +1,202 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{geometry}
+\usepackage{stmaryrd}
+%\geometry{hmargin=2.5cm,vmargin=1.5cm}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{dfn}{Definition}[section]
+\newtheorem{prop}{Proposition}[section]
+\newtheorem{cor}{Corollary}[section]
+\newtheorem{lem}{Lemma}[section]
+\newtheorem{rem}{Remark}[section]
+\newtheorem{theorem}{Theorem}
+\renewcommand*{\thetheorem}{\Alph{theorem}}
+\newcommand{\supp}{\Gamma_{\mu}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+
+
+% \parindent=0em
+
+\title{Stationary measures and orbit closures for the action of $SL_2(\mathbb{Z})$ on the torus following Y.Benoist \& J-F.Quint.}
+\author{Florent Ygouf}
+
+\begin{document}
+ 
+\maketitle
+
+\section{Promoting invariance to classification}
+\label{sec:promoting_invariance_to_classification}
+
+\subsection{Unstable leawise measures}
+\label{sub:unstable_leawise_measures}
+
+Let $ b \in B $.
+Define
+$ B_{n} = (b_{k})_{k\ge n}  $
+and
+$ B^{n} = (b_{k})_{k \le n}  $.
+Define
+$ \pi_{n} : B \to B_{n} $
+and
+$ \pi^{n} : B \to B^{n} $
+the projection.
+Given $ b \in B $,
+we embed
+$ B_{-n} $
+in
+$ B_{-(n+1)} $
+by
+$ u \mapsto b_{-(n+1)} u $.
+
+The unstable leaf
+$ W^{uu}(b) $ 
+through $ b $ is
+by 
+defintion
+the set of $ c \in B $
+such that there exists
+$ n \in \Z $
+such that
+$ \pi^{n} (b) = \pi^{n} (c) $.
+It is homeomorphic to the
+inductive limit
+$ \lim_{n \to \infty}  B^{-n} $
+using the embeding defined above.
+We denote by
+$ W^{uu}_{b,n} $
+the fiber of $ b $
+with respect to
+$ \pi^{n} $,
+which is homeorphic to $ B^{-n} $.
+
+% The time $ n $ spliting of $ B $
+% (analog to a foliation chart)
+% is the homeomorphism
+% \begin{equation}
+% 	(\pi^{n}, \pi_{n+1}):
+% 	B
+% 	\to
+% 	B^{n} \times B_{n+1}
+% 	.
+% \end{equation}
+
+We want to
+construct the leafwise measures
+associated to the foliation
+$ W^{uu} $.
+
+Let
+$ \beta_{b}^{n} $ 
+be the conditional measures
+of $ \beta $
+with respect to the
+$ \sigma $-algebra of Borelian
+saturated by the fibers of
+$ \pi^{n} $.
+It satisfies
+\begin{equation}
+	\beta
+	=
+	\int
+	\beta_{b}^{n} 
+	d\beta(b).
+\end{equation}
+These measures satisfy
+\begin{equation}
+	\beta_{b}^{n-1}{| W^{uu}_{b, n} } 
+	\propto
+	\beta_{b}^{n}
+	,
+\end{equation}
+hence they define a measure up to scalars
+on
+$ W^{uu}_{b} $
+that we denote by $ \beta_{b} $.
+
+
+\begin{prop}
+	The family of measures
+	$ (\beta_{b})  $
+	satifisfies
+	$ \beta_{b}{| W^{uu}_{b,n} }
+	\propto
+	\beta_{b}^{n} $.
+\end{prop}
+
+Now in $ B^X $.
+The unstable leaf with respect to $ T $
+through
+$ (b,x) $ is
+\begin{equation}
+	W^{uu}_{(b,x)}
+	=
+	\left\{ 
+		(c, y),
+		c \in W^{uu}_{b},
+		y \in x + \R v_{b}
+	\right\}
+	.
+\end{equation}
+The leafwise measures associated
+to this foliation are
+\begin{equation}
+	\beta^{\nu}_{b,x}
+	=
+	\beta_{b}
+	\otimes
+	\nu_{b,x}
+	=
+	\beta_{b}
+	\otimes
+	Leb_{x + \R v_{b}} 
+	.
+\end{equation}
+
+\begin{prop}
+	$ T $ is ergodic
+	with respect to
+	$ \beta^{Leb} $.
+\end{prop}
+\begin{proof}
+	It is a particular case of the following statement:
+	if $ m $ is a $ \mu $-stationary measure and
+	$ m $ is invariant and ergodic with respect to
+	$ g $ such that $ \mu(g) > 0 $ then
+	$ m $ is ergodic as a $ \mu $-stationary measure.
+
+	Let $ m = m_{1} + m_{2} $ be a decomposition
+	of $ m $ with $ m_1 $ and $ m_{2} $ $ \mu $-stationary measures.
+	Without loss of generality we can assume that there exists
+	a Borel set $ A $ with $ m_{1}(A) > 0 $ and
+	$ m_{2}(A) = 0 $.
+\end{proof}
+
+\begin{prop}
+	The basin
+	$ \Omega_{\beta^{\nu}} $ 
+	of the measure
+	$ \beta^{\nu} $
+	for $ T $
+	has positive measure with respect to
+	$ \beta^{Leb} $.
+\end{prop}
+
+\begin{cor}
+	$ \nu = Leb $ 
+\end{cor}
+
+
+
+
+
+% \bibliographystyle{plain}
+% \bibliography{biblioBQ}
+
+\end{document}
